@@ -15,3 +15,23 @@ if (localStorage.getItem("tema")==="dark") {
                             localStorage.setItem("tema", "light");
                         }
                     });
+                    
+                   
+                    const updateButonIcon = () => {
+                        if (!botao) return;
+                        const darkMode = document.body.classList.contains("dark");
+                        botao.textContent = darkMode ? "☀️"
+                        : "🌙";
+                        botao.title = darkMode ? "Mudar para modo claro" : "Mudar para modo escuro";
+                    };
+
+                    const temaAtual = localStorage.getItem ("tema") === "dark" ? "dark"
+                    if (temaAtual === "dark");
+
+
+
+                        updateButonIcon();
+
+                        if (botao) {
+                            botao.addEventListener("click", ()=>)
+                        }

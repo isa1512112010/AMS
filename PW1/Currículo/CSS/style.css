@@ -9,6 +9,7 @@
     --cor-borda: #cecece;
     --cor-sombra: #ccc;
     --cor-branca: #fff;
+    --bg-image:
 
     /*fontes */
     --fonte-padrao: Arial, Tahoma, Verdana;
@@ -33,6 +34,13 @@
 html, body{
     height: 100%;
     background: var(--cor-fundo);
+    background:
+    linear-gradient( 
+        rgba(255,255,255, var(--overlay-opacity)),
+        rgba(255,255,255, var(--overlay-opacity))
+    ),
+    var(--bg-image) no-repeat center fixed;
+    background-size: cover;
 }
 
 main{

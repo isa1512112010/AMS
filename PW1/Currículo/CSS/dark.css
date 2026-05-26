@@ -18,6 +18,8 @@
     --cor-branca: #1e1e1e;
     --cor-borda2: #444;
     --cor-sombra2: #000;
+    --bg-image:ur("../Imagens/fundo2.jpg")
+    --overlay-opacity:
 }
 
 * {
@@ -29,6 +31,17 @@ body {
     color: var(--cor-texto2);
 }
 
+body.dark,
+body.dark html {
+    background:
+        linear-gradient(
+            rgba(0,0,0, var(--overlay-opacity)),
+            rgba(0,0,0, var(--overlay-opacity))
+
+        ), 
+    var(--bg-image) no-repeat center center fixed;
+background-size: cover;
+}
 header {
     background: var(--cor-header2);
 }

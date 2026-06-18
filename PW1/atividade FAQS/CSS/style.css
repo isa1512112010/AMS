@@ -1,0 +1,24 @@
+:root {
+    --cor-fundo-header: #FFD8DF;
+    --cor-titulo: #F075AE;
+    --cor-fundo: #F0FFDF;
+}
+
+header{
+    background-color: var(--cor-fundo-header);
+    color: var(--cor-titulo);
+    text-align: center;
+    padding: 20px;
+    top: 0;
+    z-index: 1000;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}

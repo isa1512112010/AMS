@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 :root {
-    --cor-fundo-header: #FFD8DF;
-    --cor-titulo: #F075AE;
-    --cor-fundo: #F0FFDF;
+    --cor-fundo-header: #FF4081;
+    --cor-titulo: #982598;
+    --cor-fundo: #FBC3C1;
+    --cor-nav: #FFF5F8;
+    ;
 }
 
 header{
@@ -13,6 +17,10 @@ header{
     z-index: 1000;
 }
 
+header h1 {
+    font-family: "Caveat", cursive;
+}
+
 main{
     width: 90%;
     max-width: 1000px;
@@ -21,4 +29,10 @@ main{
 
 body {
     background-color: var(--cor-fundo);
+}
+
+nav a{
+    color: var(--cor-nav);
+    text-decoration: none;
+    margin: 10px;
 }

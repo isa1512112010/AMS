@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #FFDCDC;
+    margin: 0;
+}
+
+header{
+    background-color: #F49BAB;
+    padding: 20px;
+}
+
+h1{
+    font-family: "Caveat", cursive;
+    color: #FFF2EB;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a{
+    color: #FFF2EB;
+    text-decoration: none;
+    margin: 5px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    color:#FFF2EB;
+    background-color: #FFF7F3;
+    border: 2px solid #D6336C;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+h2{
+    background-color: #FFB6C1;
+    padding: 5px;
+}
+
+.faq{
+    margin-bottom: 15px;
+}
+
+h3{
+    color: #D6336C;
+}
+
+p{
+    color: black;
+}
+
+.voltar{
+    background-color: #FF4081;
+    
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.voltar:hover{
+    background-color: #D6336C ;
+}
+
+.container__menu{
+    text-align: center;
+}

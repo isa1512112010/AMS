@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Formulário de cadastro</title>
 </head>
 <body>
@@ -77,9 +78,27 @@
                             <span class="sublinhado">Estado Civil</span>
                             <span class="tipo">(select)</span>
                         </span>
+                             <select>
+                    <option value="">Selecione</option>
+                    <option>Solteiro(a)</option>
+                    <option>Casado(a)</option>
+                    <option>Divorciado(a)</option>
+                    <option>Viúvo(a)</option>
+                </select>
                 </label>
             </div>
              </div>
+               <div class="campo arquivo">
+                <label>
+                    🖼️ <u>Foto de perfil</u>
+                    <span>(file)</span>
+                </label>
+
+                <input type="file" accept="image/*">
+            </div>
+ <button class="botao" type="submit">
+                🚀 Enviar cadastro
+            </button>
 
          </div>
      </form>

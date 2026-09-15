@@ -1,6 +1,4 @@
-/* =========================================
-   CONFIGURAÇÕES GERAIS
-========================================= */
+
 
 * {
     box-sizing: border-box;
@@ -8,150 +6,91 @@
 
 body {
     margin: 0;
-    padding: 0;
-    background: white;
+    padding: 20px;
+    background: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: #111;
+    font-size: 13px;
+    color: #222;
 }
-
-
-/* =========================================
-   CONTAINER PRINCIPAL
-========================================= */
 
 .container {
-    width: 775px;
-    min-height: 624px;
-    margin: 7px auto;
-
-    background: #cfcfcf;
+    width: 600px;
+    margin: 0 auto;
+    background: #ccc;
     border: 2px solid #555;
-
-    overflow: hidden;
+    padding: 0 6px 6px;
 }
 
 
-/* =========================================
-   CABEÇALHO / TÍTULO
-========================================= */
-
 h1 {
-    height: 84px;
-    margin: 0;
-
-    background: #f5f5f5;
-    border-bottom: 2px solid #555;
+    height: 58px;
+    margin: 0 -6px 0;
+    padding: 0 10px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
 
-    position: relative;
+    background: #fff;
+    border-bottom: 3px solid #666;
 
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 0;
 }
 
 h1::before {
     content: "CENTRO\A PAULA SOUZA";
     white-space: pre;
 
-    position: absolute;
-    left: 10px;
-    top: 9px;
+    width: 170px;
 
-    color: #b00000;
-
+    color: #c41624;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 13px;
 }
 
 h1::after {
-    content: "ETEC  Monsenhor Antonio Magliano";
+    content: "ETEC  MonSenhor Antônio Magliano";
 
-    position: absolute;
-    right: 10px;
-    top: 17px;
+    margin-left: auto;
 
     color: #111;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: normal;
-}
-
-h1 .vermelho {
-    display: none;
-}
-
-h1 .sublinhado {
-    text-decoration: none;
-}
-
-h1 > .sublinhado {
-    position: absolute;
-
-    top: 57px;
-    left: 0;
-
-    width: 100%;
-    height: 35px;
-
-    background: #666;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 21px;
+    font-size: 15px;
     font-weight: bold;
 }
 
-
-/* =========================================
-   FORMULÁRIO
-========================================= */
-
-#FormCadastro {
-    width: 100%;
-    padding: 0 4px 10px;
+h1 span {
+    display: none;
 }
 
-
-/* =========================================
-   CAMPOS
-========================================= */
+form {
+    width: 100%;
+    background: #ccc;
+}
 
 .campo {
-    display: inline-flex;
-    flex-direction: column;
-    vertical-align: top;
-
-    margin: 0 1px 5px 0;
+    margin: 0;
+    padding: 0;
 }
 
-.campo .titulo {
-    height: 21px;
-
+.titulo {
     display: block;
+    margin: 0;
+    padding: 2px 3px;
 
-    line-height: 21px;
+    color: #222;
+    font-size: 13px;
     font-weight: normal;
-
-    background: transparent;
 }
 
-.campo .sublinhado {
+.sublinhado {
     text-decoration: none;
 }
 
+.tipo {
+    font-size: 12px;
+}
 
-/* =========================================
-   INPUTS
-========================================= */
 
 input[type="text"],
 input[type="date"],
@@ -166,9 +105,9 @@ input[type="CEP"],
 input[type="Telefone"],
 input[type="celular"],
 input[type="Ano_conclusao"] {
-    height: 23px;
+    height: 18px;
 
-    padding: 1px 4px;
+    padding: 1px 3px;
 
     border: 1px solid #aaa;
     border-radius: 0;
@@ -176,325 +115,189 @@ input[type="Ano_conclusao"] {
     background: #fff;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
+    font-size: 12px;
 
-input:focus,
-select:focus {
     outline: none;
-    border-color: #555;
 }
 
-
-/* =========================================
-   NOME
-========================================= */
+input:focus {
+    border-color: #666;
+}
 
 #nome {
-    width: 766px;
+    width: 100%;
 }
-
-#nome + * {
-    margin-left: 0;
-}
-
-
-/* =========================================
-   DATA
-========================================= */
 
 #data_nascimento {
-    width: 128px;
+    width: 95px;
 }
 
-
-/* =========================================
-   DOCUMENTO
-========================================= */
-
 #Doc {
+    width: 135px;
+}
+
+#CPF {
+    width: 115px;
+}
+
+#Endereco {
+    width: 355px;
+}
+
+#numero {
+    width: 58px;
+}
+
+#Complemento {
+    width: 168px;
+}
+
+#Bairro {
     width: 170px;
 }
 
-
-/* =========================================
-   CPF
-========================================= */
-
-#CPF {
-    width: 153px;
+#cidade {
+    width: 315px;
 }
 
+select {
+    height: 19px;
 
-/* =========================================
-   RADIO BUTTONS
-========================================= */
+    border: 1px solid #999;
+    border-radius: 0;
+
+    background: #fff;
+
+    font-size: 12px;
+}
+
+#estado,
+select {
+    min-width: 100px;
+}
+
+#CEP {
+    width: 95px;
+}
+
+#Telefone {
+    width: 135px;
+}
+
+#celular {
+    width: 135px;
+}
 
 .radio-container {
-    height: 23px;
-
     display: flex;
     align-items: center;
+    gap: 10px;
 
-    gap: 8px;
+    padding: 2px 3px;
 }
 
 .radio-container label {
     display: flex;
     align-items: center;
+    gap: 3px;
 
     white-space: nowrap;
-
-    font-size: 16px;
+    font-size: 13px;
 }
 
-.radio-container input[type="radio"] {
-    width: 15px;
-    height: 15px;
+input[type="radio"] {
+    width: 13px;
+    height: 13px;
 
-    margin: 0 5px 0 0;
+    margin: 0;
 }
 
-
-/* =========================================
-   SEXO
-========================================= */
-
-#CPF ~ .campo {
-    min-width: 170px;
+#email {
+    width: 225px;
 }
 
-
-/* =========================================
-   ENDEREÇO
-========================================= */
-
-#Endereco {
-    width: 463px;
-}
-
-#numero {
-    width: 75px;
-}
-
-#Complemento {
-    width: 220px;
+#Ano_conclusao {
+    width: 120px;
 }
 
 
-/* texto Rua/Avenida, Praça */
-
-.tipo {
-    margin-left: 4px;
+.campo:has(#Ano_conclusao) {
+    display: inline-block;
 }
 
+.botao {
+    height: 21px;
 
-/* =========================================
-   BAIRRO
-========================================= */
-
-#Bairro {
-    width: 220px;
-}
-
-
-/* =========================================
-   CIDADE
-========================================= */
-
-#cidade {
-    width: 405px;
-}
-
-
-/* =========================================
-   ESTADO
-========================================= */
-
-#estado {
-    width: 130px;
-}
-
-select {
-    height: 23px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 1px 10px;
 
     border: 1px solid #aaa;
     border-radius: 0;
 
-    background: #fff;
+    background: linear-gradient(#fff, #ddd);
+
+    color: #111;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-
-#estado_civil {
-    width: 150px;
-}
-
-
-/* =========================================
-   CEP
-========================================= */
-
-#CEP {
-    width: 130px;
-}
-
-
-/* =========================================
-   TELEFONE
-========================================= */
-
-#Telefone {
-    width: 170px;
-}
-
-
-/* =========================================
-   CELULAR
-========================================= */
-
-#celular {
-    width: 168px;
-}
-
-
-/* =========================================
-   ESCOLA
-========================================= */
-
-#celular ~ .campo .radio-container {
-    height: 25px;
-
-    gap: 12px;
-}
-
-
-/* =========================================
-   E-MAIL
-========================================= */
-
-#email {
-    width: 290px;
-}
-
-
-/* =========================================
-   ANO DE CONCLUSÃO
-========================================= */
-
-#Ano_conclusao {
-    width: 160px;
-}
-
-
-/* =========================================
-   TREINEIRO
-========================================= */
-
-#Ano_conclusao ~ .campo {
-    min-width: 120px;
-}
-
-#Ano_conclusao ~ .campo .radio-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    height: auto;
-    gap: 0;
-}
-
-
-/* =========================================
-   ESTADO CIVIL
-========================================= */
-
-#estado_civil {
-    width: 160px;
-}
-
-
-/* =========================================
-   BOTÕES
-========================================= */
-
-.botao {
-    height: 27px;
-
-    padding: 1px 13px;
-
-    margin-top: 8px;
-    margin-right: 7px;
-
-    border: 2px solid #ddd;
-    border-radius: 0;
-
-    background: #eee;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
 
     cursor: pointer;
 }
 
 .botao:hover {
-    background: #ddd;
+    background: #eee;
 }
 
 .botao:active {
     background: #ccc;
 }
 
-
-/* =========================================
-   POSICIONAMENTO DOS BOTÕES
-========================================= */
-
-#FormCadastro {
-    text-align: center;
+#nome {
+    display: block;
 }
 
-#FormCadastro .campo {
-    text-align: left;
-}
-
-#FormCadastro .botao {
+#data_nascimento,
+#Doc,
+#CPF {
     display: inline-block;
+    vertical-align: bottom;
 }
 
+@media (max-width: 650px) {
 
-/* =========================================
-   RESPONSIVIDADE
-========================================= */
-
-@media (max-width: 800px) {
+    body {
+        padding: 5px;
+    }
 
     .container {
-        width: 98%;
-        height: auto;
-    }
-
-    #nome {
         width: 100%;
     }
 
-    #Endereco,
-    #cidade,
-    #email {
-        width: 100%;
-    }
-
-    #Complemento {
-        width: 100%;
-    }
-
-    .campo {
-        max-width: 100%;
+    h1::before {
+        width: 130px;
+        font-size: 10px;
     }
 
     h1::after {
-        display: none;
+        font-size: 12px;
+    }
+
+    input,
+    select {
+        max-width: 100%;
+    }
+
+    #Endereco {
+        width: 60%;
+    }
+
+    #Complemento {
+        width: 30%;
+    }
+
+    #cidade {
+        width: 50%;
     }
 }
